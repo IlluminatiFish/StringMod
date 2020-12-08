@@ -1,6 +1,6 @@
 ###########################
 # Project Name: StringMod #
-# Version: 0.0.1          #
+# Version: 0.0.2          #
 # Author: IlluminatiFish  #
 ###########################
 
