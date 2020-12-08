@@ -10,6 +10,17 @@ class Matcher:
         self.string_a = string_a
         self.string_b = string_b
 
+
+    def full_match(self):
+
+        chars_a = [char for char in self.string_a if not char.isspace()]
+        chars_b = [char for char in self.string_b if not char.isspace()]
+      
+        if matcher.matches() == max(len(chars_a), len(chars_b)):
+            return True
+        else:
+            return False
+
         
     def matches(self):
 
@@ -43,6 +54,6 @@ class Matcher:
         return matched
 
 matcher = Matcher('test', 'test2')
+print('Do the strings match fully? {}'.format('Yes' if matcher.full_match() else 'No'))
 print('Number of matches made: {}'.format(matcher.matches()))
 print('Chars that were matched: {}'.format(matcher.matched_chars()))
-
